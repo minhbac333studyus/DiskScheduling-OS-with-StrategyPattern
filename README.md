@@ -1,11 +1,12 @@
 **Wanna download my code for contribute open source?**
-Minhbac333us make minor chage in here now now now
 
 `git clone https://github.com/minhbac333studyus/DiskScheduling-OS-with-StrategyPattern`
 
+**If you are manager**
+`git remote set-url origin https://github.com/minhbac333studyus/DiskScheduling-OS-with-StrategyPattern`
 
 Open the file and turn on git bash
-
+Set your name and password + login into your github account
 To create your branch\
 `git branch yourNameClone `
 
@@ -25,5 +26,5 @@ Go back to main branch
 Try to master change here 
 `git checkout main` \
 `git pull`
-try to change some code here
+ 
 **Author: Anh Minh , Erick**
