@@ -25,7 +25,8 @@ set the your identity
 `git push -u  origin yourBranchNameClone`\
 To get newest Offical Version from github \
 Go back to main branch
-Try to master change here 
+ 
+ 
 `git checkout main` \
 `git pull`
  
