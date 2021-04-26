@@ -26,8 +26,11 @@ set the your identity
 To get newest Offical Version from github \
 Go back to main branch
  
- 
+
 `git checkout main` \
 `git pull`
+ 
+ After finishing your code, create a pull request to my repository
+ If it well-tested and suitable, I will merge it into my source code  
  
 **Author: Anh Minh , Erick**
