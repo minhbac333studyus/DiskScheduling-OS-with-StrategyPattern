@@ -18,11 +18,11 @@ set the your identity
 
 `git commit -m "explain What you write in your file here"`
 
-`git push -u  origin yourNameClone`
+`git push -u  origin yourNameClone`\
 To get newest Offical Version from github \
-Go back to main branch\
+Go back to main branch
 
 `git checkout main` \
-`git pull` \
+`git pull`
 
 **Author: Anh Minh , Erick**
