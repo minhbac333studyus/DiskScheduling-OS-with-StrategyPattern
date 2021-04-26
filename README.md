@@ -1,5 +1,6 @@
 **Wanna download my code for contribute open source?**
-Minhbac333us make minor chage in here
+Minhbac333us make minor chage in here now now now
+
 `git clone https://github.com/minhbac333studyus/DiskScheduling-OS-with-StrategyPattern`
 
 
