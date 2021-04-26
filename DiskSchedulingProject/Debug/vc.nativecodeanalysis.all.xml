@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\DiskScheduling-OS-with-StrategyPattern\DiskSchedulingProject\</FILEPATH>
+      <FILENAME>DiskScheduling.h</FILENAME>
+      <LINE>41</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'DiskScheduling::disk' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>DiskScheduling::{ctor}</FUNCTION>
+    <DECORATED>??0DiskScheduling@@QAE@XZ</DECORATED>
+    <FUNCLINE>41</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>DiskScheduling::disk</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

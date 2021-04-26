@@ -1,6 +1,2 @@
-﻿  DiskScheduling.cpp
-  DiskSchedulingProject.cpp
-  Fcfs_algorithm.cpp
-  SchedulingAlgorithm.cpp
-  Generating Code...
-  DiskSchedulingProject.vcxproj -> C:\Users\minhb\source\repos\DiskSchedulingProject\Debug\DiskSchedulingProject.exe
+﻿  Fcfs_algorithm.cpp
+  DiskSchedulingProject.vcxproj -> C:\DiskScheduling-OS-with-StrategyPattern\Debug\DiskSchedulingProject.exe

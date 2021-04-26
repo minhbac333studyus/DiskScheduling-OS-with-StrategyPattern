@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\disk_algorithm_header">
+      <UniqueIdentifier>{4e20c50b-92d3-49dd-8005-f7944635d1af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DiskSchedulingProject.cpp">
@@ -39,10 +42,10 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Fcfs_algorithm.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\disk_algorithm_header</Filter>
     </ClInclude>
     <ClInclude Include="Scan_algorithm.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\disk_algorithm_header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
