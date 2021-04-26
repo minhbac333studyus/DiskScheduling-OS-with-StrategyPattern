@@ -3,7 +3,7 @@
 `git clone https://github.com/minhbac333studyus/DiskScheduling-OS-with-StrategyPattern`
 
 **If you are manager**
-`git remote set-url origin https://github.com/minhbac333studyus/DiskScheduling-OS-with-StrategyPattern`
+`git remote set-url origin https://github.com/minhbac333studyus/DiskScheduling-OS-with-StrategyPattern`\
 **else keep reading the text below**
 
 
