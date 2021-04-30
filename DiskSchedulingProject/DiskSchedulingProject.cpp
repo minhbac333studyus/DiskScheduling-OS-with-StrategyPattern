@@ -3,29 +3,33 @@
 #include "DiskScheduling.h"
 #include "SchedulingAlgorithm.h"
 #include "Fcfs_algorithm.h"
+#include "Scan_algorithm.h"
 #include <ctime>
 #include<random>
-using namespace std;
+using namespace std; 
 int produceRandom();
 void initualizeData(DiskScheduling& ds);
 void showMenu();
 int main()
 {
+    vector<int> data = { 100, 26, 27, 28, 4, 5, 6 };
     char userOption;
     DiskScheduling ds;
-    initualizeData(ds);
-    Fcfs_algorithm fcfs;
-
-
-    cin >> userOption;
+    //initualizeData(ds); 
+    ds.setCyliaders(data);
+    
     do {
         showMenu(); 
         cin >> userOption;
         if (userOption == '1') {
-            ds.setStrategy(&fcfs); 
-            ds.run(&ds);
+            Fcfs_algorithm fcfs; 
+            ds.setStrategy(&fcfs);  
         }
-      
+        else if (userOption == '3') {
+            Scan_algorithm scan;
+            ds.setStrategy(&scan); 
+        }
+        ds.run(&ds); 
     }   
     while (userOption == 'Q' || userOption == 'q');
 
@@ -34,6 +38,7 @@ int main()
    
     return 0;
 }
+//CScan Scan 
 
  
 int produceRandom() {  

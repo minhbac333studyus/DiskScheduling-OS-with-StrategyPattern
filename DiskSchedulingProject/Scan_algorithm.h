@@ -3,6 +3,6 @@
 class Scan_algorithm :
     public SchedulingAlgorithm
 {
-    void runAl(DiskScheduling* disk) override {};
+public: void runAl(DiskScheduling* disk) override ;
 };
 

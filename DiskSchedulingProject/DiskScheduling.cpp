@@ -25,3 +25,7 @@ void DiskScheduling::run(DiskScheduling *disk){
          cout << "Normal behavior";
      }
 }
+
+void DiskScheduling::setCyliaders(vector<int>& input) {
+    m_cylinders = input;
+}
