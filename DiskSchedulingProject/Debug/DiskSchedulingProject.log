@@ -1,9 +1,4 @@
-﻿  DiskScheduling.cpp
-  DiskSchedulingProject.cpp
-  Fcfs_algorithm.cpp
-  Scan_algorithm.cpp
-C:\DiskScheduling-OS-with-StrategyPattern\DiskSchedulingProject\Scan_algorithm.cpp(5,20): warning C4018: '<': signed/unsigned mismatch
-C:\DiskScheduling-OS-with-StrategyPattern\DiskSchedulingProject\Scan_algorithm.cpp(38,21): warning C4018: '<': signed/unsigned mismatch
-  SchedulingAlgorithm.cpp
-  Generating Code...
+﻿  PrintManager.cpp
+C:\DiskScheduling-OS-with-StrategyPattern\DiskSchedulingProject\PrintManager.cpp(10,20): warning C4018: '<': signed/unsigned mismatch
+C:\DiskScheduling-OS-with-StrategyPattern\DiskSchedulingProject\PrintManager.cpp(40,20): warning C4018: '<': signed/unsigned mismatch
   DiskSchedulingProject.vcxproj -> C:\DiskScheduling-OS-with-StrategyPattern\Debug\DiskSchedulingProject.exe

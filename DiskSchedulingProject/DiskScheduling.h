@@ -1,26 +1,27 @@
 #pragma once 
 #include"SchedulingAlgorithm.h"
-#include <vector>
-#include<iostream>
-#include <algorithm>
-using namespace std;
+#include <vector>  
+ 
 class SchedulingAlgorithm;
 class DiskScheduling {
 private:
-    vector<int> m_cylinders;
-    int m_header = 0;
-    int m_previous_request = 0 ;
-    SchedulingAlgorithm* m_strategy{};
+    std::vector<int> cylinders_;
+    std::vector<int> result_cylinders_;
+    int header_ = 0;
+    int previous_request_ = 0 ;
+    SchedulingAlgorithm* strategy_{};
     DiskScheduling* disk{};
 public:
-    DiskScheduling() : m_header(13), m_previous_request(0) {};
-    const vector<int> getCyliaders();
-    void setCyliaders(vector<int>& input);
-    const int getHeader();
-    const int getPreviousRequest();
+    DiskScheduling() : header_(13), previous_request_(0) {};
+    std::vector<int> get_cylinders();
+    void setCylinders(std::vector<int>& input);
+    int getHeader();
+    int getPreviousRequest();
     void setHeader(int i);
     void addValue(int i);
-    void setStrategy(SchedulingAlgorithm* newStrategy);
-    void run(DiskScheduling *disk); 
+    void setStrategy(SchedulingAlgorithm* newStrategy); 
+	void runAl(DiskScheduling *disk);
+    std::vector<int> getVectorRe();
+    void setVectorRe(std::vector<int> input); 
 };
 

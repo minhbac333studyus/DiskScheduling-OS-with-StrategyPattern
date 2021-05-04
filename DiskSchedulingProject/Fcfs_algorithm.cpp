@@ -1,6 +1,4 @@
 #include "Fcfs_algorithm.h"
+#include <iostream>
 
-void Fcfs_algorithm::runAl(DiskScheduling* disk)  {
-    cout << "Fcfs is running " << endl;
-}
-    
+ 

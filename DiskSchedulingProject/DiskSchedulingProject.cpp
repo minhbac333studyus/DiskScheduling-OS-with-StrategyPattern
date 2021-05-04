@@ -4,6 +4,7 @@
 #include "SchedulingAlgorithm.h"
 #include "Fcfs_algorithm.h"
 #include "Scan_algorithm.h"
+#include "PrintManager.h"
 #include <ctime>
 #include<random>
 using namespace std; 
@@ -14,22 +15,29 @@ int main()
 {
     vector<int> data = { 100, 26, 27, 28, 4, 5, 6 };
     char userOption;
-    DiskScheduling ds;
+    DiskScheduling ds; 
     //initualizeData(ds); 
-    ds.setCyliaders(data);
-    
+    ds.setCylinders(data);
+    PrintManager pm;
+    vector<int> resultVector;
     do {
         showMenu(); 
         cin >> userOption;
         if (userOption == '1') {
-            Fcfs_algorithm fcfs; 
-            ds.setStrategy(&fcfs);  
+            /*Fcfs_algorithm fcfs; 
+            ds.setStrategy(&fcfs);  */
         }
         else if (userOption == '3') {
             Scan_algorithm scan;
             ds.setStrategy(&scan); 
+            ds.runAl(&ds);
+            
+          
         }
-        ds.run(&ds); 
+        resultVector = ds.getVectorRe();
+        pm.printDiffCylinder(&ds);
+        pm.printTable(&ds);
+        
     }   
     while (userOption == 'Q' || userOption == 'q');
 

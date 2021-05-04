@@ -33,6 +33,9 @@
     <ClCompile Include="Scan_algorithm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PrintManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DiskScheduling.h">
@@ -46,6 +49,9 @@
     </ClInclude>
     <ClInclude Include="Scan_algorithm.h">
       <Filter>Header Files\disk_algorithm_header</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintManager.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

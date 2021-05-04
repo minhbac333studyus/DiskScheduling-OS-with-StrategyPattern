@@ -1,31 +1,42 @@
 #include "DiskScheduling.h"
-const vector<int> DiskScheduling::getCyliaders() {
-    return this->m_cylinders;
+ std::vector<int> DiskScheduling::get_cylinders() {
+    return this->cylinders_;
 }
-const int DiskScheduling::getHeader() {
-    return this->m_header;
+ int DiskScheduling::getHeader() {
+    return this->header_;
 }
-const int DiskScheduling::getPreviousRequest() {
-    return this->m_previous_request;
+ int DiskScheduling::getPreviousRequest() {
+    return this->previous_request_;
 }
 void DiskScheduling::setHeader(int i) {
-    m_header = i;
+    header_ = i;
 }
 void DiskScheduling::addValue(int i) {
-    m_cylinders.push_back(i);
+    cylinders_.push_back(i);
 }
 void DiskScheduling::setStrategy(SchedulingAlgorithm* newStrategy) {
-    m_strategy = newStrategy;
+    strategy_ = newStrategy;
 } 
-void DiskScheduling::run(DiskScheduling *disk){
-     if (m_strategy) {
-         m_strategy->runAl(disk);
-     }
-     else {
-         cout << "Normal behavior";
-     }
+ 
+
+void DiskScheduling::runAl(DiskScheduling* disk)
+{
+    if (strategy_) {
+        strategy_->runAlgorithm(disk);
+    }
 }
 
-void DiskScheduling::setCyliaders(vector<int>& input) {
-    m_cylinders = input;
+ 
+std::vector<int> DiskScheduling::getVectorRe()
+{ 
+    return result_cylinders_;
+}
+
+void DiskScheduling::setVectorRe(std::vector<int> input)
+{
+    result_cylinders_ = input;
+}
+
+void DiskScheduling::setCylinders(std::vector<int>& input) {
+    cylinders_ = input;
 }
