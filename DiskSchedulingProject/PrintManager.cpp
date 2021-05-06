@@ -16,9 +16,7 @@ void PrintManager::printCylinder(std::vector<int>& input,std::string keyword)
 	std::cout << "\n";
  
 }
-void PrintManager::printTable(std::vector<int>& input)
-{
-}
+ 
 void PrintManager::printEachTrack(int i)
 {
 	std::cout << "|" << i << "|";
@@ -32,14 +30,8 @@ void PrintManager::printDiffCylinder(DiskScheduling *disk)
 	printCylinder(v2, after);
 }
 
-void PrintManager::printTable(DiskScheduling* disk)
+void PrintManager::printReport(Report* rp)
 {
-	int headPos = disk->getHeader();
-	std::vector<int> requestOrder = disk->getVectorRe();
-	std::cout << "\n______________TABLE TRACKING____________\n";
-	for (int i = 0; i < requestOrder.size(); i++) {
-		std::cout <<"|\t"<< headPos << "\t -> \t" << requestOrder.at(i) << "\t: " << abs(requestOrder.at(i) - headPos)<<"\t|\n";
-		headPos = requestOrder.at(i);
-		
-	}
+	std::cout << rp->getTableReport();
 }
+

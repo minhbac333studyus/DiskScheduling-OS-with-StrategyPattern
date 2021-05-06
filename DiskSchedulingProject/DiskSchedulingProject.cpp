@@ -1,12 +1,18 @@
 #include <iostream>
 #include <vector>
+#include <ctime>
+#include<random>
+#include<fstream>
+
+
 #include "DiskScheduling.h"
 #include "SchedulingAlgorithm.h"
 #include "Fcfs_algorithm.h"
 #include "Scan_algorithm.h"
 #include "PrintManager.h"
-#include <ctime>
-#include<random>
+#include "Report.h"
+
+
 using namespace std; 
 int produceRandom();
 void initualizeData(DiskScheduling& ds);
@@ -16,9 +22,13 @@ int main()
     vector<int> data = { 100, 26, 27, 28, 4, 5, 6 };
     char userOption;
     DiskScheduling ds; 
+    PrintManager pm;
+    Report rp;
+   
+
     //initualizeData(ds); 
     ds.setCylinders(data);
-    PrintManager pm;
+    
     vector<int> resultVector;
     do {
         showMenu(); 
@@ -29,20 +39,17 @@ int main()
         }
         else if (userOption == '3') {
             Scan_algorithm scan;
-            ds.setStrategy(&scan); 
-            ds.runAl(&ds);
-            
-          
+            ds.setStrategy(&scan);  
         }
-        resultVector = ds.getVectorRe();
+        ds.runAl(&ds);
+        resultVector = ds.getVectorRe(); 
+        rp.calculateReportCost(&ds);
+        rp.writeReportTable(&ds); 
         pm.printDiffCylinder(&ds);
-        pm.printTable(&ds);
-        
+        pm.printReport(&rp);
+        rp.save("output.txt");
     }   
-    while (userOption == 'Q' || userOption == 'q');
-
-
-  
+    while (userOption != 'Q' && userOption != 'q'); 
    
     return 0;
 }
