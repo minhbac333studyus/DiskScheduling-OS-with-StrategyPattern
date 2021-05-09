@@ -16,6 +16,9 @@
     <Filter Include="Header Files\disk_algorithm_header">
       <UniqueIdentifier>{4e20c50b-92d3-49dd-8005-f7944635d1af}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\disk_algorithmCPP">
+      <UniqueIdentifier>{83783a9c-1235-4aec-880e-1c8b70d5dad7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DiskSchedulingProject.cpp">
@@ -27,17 +30,23 @@
     <ClCompile Include="SchedulingAlgorithm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Fcfs_algorithm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scan_algorithm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="PrintManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Report.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scan_algorithm.cpp">
+      <Filter>Source Files\disk_algorithmCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Fcfs_algorithm.cpp">
+      <Filter>Source Files\disk_algorithmCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="SSTF_algorithm.cpp">
+      <Filter>Source Files\disk_algorithmCPP</Filter>
+    </ClCompile>
+    <ClCompile Include="CScan_algorithm.cpp">
+      <Filter>Source Files\disk_algorithmCPP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +67,12 @@
     </ClInclude>
     <ClInclude Include="Report.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SSTF_algorithm.h">
+      <Filter>Header Files\disk_algorithm_header</Filter>
+    </ClInclude>
+    <ClInclude Include="CScan_algorithm.h">
+      <Filter>Header Files\disk_algorithm_header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

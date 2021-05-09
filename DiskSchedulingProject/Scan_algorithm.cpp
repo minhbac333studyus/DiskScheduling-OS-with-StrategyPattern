@@ -24,7 +24,7 @@ void Scan_algorithm::runAlgorithm(DiskScheduling* disk)  {
 		}
 	}
 	sort(bigger.begin(), bigger.end(), std::less<int>());//ascending order 26,27,28,100
-	sort(smaller.begin(), smaller.end(), std::less<int>()); //ascending order 6,5,4
+	sort(smaller.begin(), smaller.end(), std::greater<int>()); //ascending order 6,5,4
 	std::vector<int> result;
 	for (auto x : bigger) {
 		result.push_back(x);

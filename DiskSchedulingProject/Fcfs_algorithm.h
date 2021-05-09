@@ -5,5 +5,5 @@
 using namespace std;
 class Fcfs_algorithm : public SchedulingAlgorithm{
 public: 
- 
+	virtual void runAlgorithm(DiskScheduling* disk) override;
 };

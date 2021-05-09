@@ -17,13 +17,13 @@ void DiskScheduling::addValue(int i) {
 void DiskScheduling::setStrategy(SchedulingAlgorithm* newStrategy) {
     strategy_ = newStrategy;
 } 
- 
+
 
 void DiskScheduling::runAl(DiskScheduling* disk)
 {
     if (strategy_) {
         strategy_->runAlgorithm(disk);
-    }
+    } 
 }
 
  

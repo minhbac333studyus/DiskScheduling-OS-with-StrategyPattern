@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CScan_algorithm.cpp" />
     <ClCompile Include="DiskScheduling.cpp" />
     <ClCompile Include="DiskSchedulingProject.cpp" />
     <ClCompile Include="Fcfs_algorithm.cpp" />
@@ -146,14 +147,17 @@
     <ClCompile Include="Report.cpp" />
     <ClCompile Include="Scan_algorithm.cpp" />
     <ClCompile Include="SchedulingAlgorithm.cpp" />
+    <ClCompile Include="SSTF_algorithm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CScan_algorithm.h" />
     <ClInclude Include="DiskScheduling.h" />
     <ClInclude Include="Fcfs_algorithm.h" />
     <ClInclude Include="PrintManager.h" />
     <ClInclude Include="Report.h" />
     <ClInclude Include="Scan_algorithm.h" />
     <ClInclude Include="SchedulingAlgorithm.h" />
+    <ClInclude Include="SSTF_algorithm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

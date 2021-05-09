@@ -6,6 +6,5 @@ private:
 	 
 public: 
 	virtual void runAlgorithm(DiskScheduling* disk) override; 
- 
 };
 

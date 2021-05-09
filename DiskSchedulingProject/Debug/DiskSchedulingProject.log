@@ -1,8 +1,2 @@
 ﻿  DiskSchedulingProject.cpp
-  PrintManager.cpp
-C:\DiskScheduling-OS-with-StrategyPattern\DiskSchedulingProject\PrintManager.cpp(10,20): warning C4018: '<': signed/unsigned mismatch
-  Report.cpp
-C:\DiskScheduling-OS-with-StrategyPattern\DiskSchedulingProject\Report.cpp(9,20): warning C4018: '<': signed/unsigned mismatch
-C:\DiskScheduling-OS-with-StrategyPattern\DiskSchedulingProject\Report.cpp(35,20): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
   DiskSchedulingProject.vcxproj -> C:\DiskScheduling-OS-with-StrategyPattern\Debug\DiskSchedulingProject.exe

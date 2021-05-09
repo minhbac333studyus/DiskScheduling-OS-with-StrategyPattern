@@ -24,14 +24,20 @@ void PrintManager::printEachTrack(int i)
 
 void PrintManager::printDiffCylinder(DiskScheduling *disk)
 {
+	
 	std::string before = "Before", after = "After";
 	std::vector<int> v1 = disk->get_cylinders(),v2 = disk->getVectorRe();
-	printCylinder(v1,before);
-	printCylinder(v2, after);
+	if (disk->getStrategy()) {
+		printCylinder(v1, before);
+		printCylinder(v2, after);
+	}
+	
 }
 
 void PrintManager::printReport(Report* rp)
 {
-	std::cout << rp->getTableReport();
+	 
+		std::cout << rp->getTableReport();
+ 
 }
 

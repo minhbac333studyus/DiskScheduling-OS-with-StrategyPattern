@@ -21,6 +21,9 @@ public:
     void addValue(int i);
     void setStrategy(SchedulingAlgorithm* newStrategy); 
 	void runAl(DiskScheduling *disk);
+    SchedulingAlgorithm* getStrategy() {
+        return strategy_;
+    }
     std::vector<int> getVectorRe();
     void setVectorRe(std::vector<int> input); 
 };
