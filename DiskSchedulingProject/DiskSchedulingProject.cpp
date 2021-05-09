@@ -103,48 +103,48 @@ void test_and_report_all_Strategy(DiskScheduling& ds, Fcfs_algorithm& fcfs, Repo
 }
 void printFastestReport(double costFCFS, double costSSTF, double costScan, double costCScan, int sz)
 {
-    if (costFCFS > costSSTF and costFCFS > costScan and costFCFS > costCScan) {
-        cout << "\nFCFS has the fastest speed";
-        cout << "\nTotal cost: " << costFCFS;
-        cout << "\nAverage cost: " << costFCFS / sz;
+    if (costFCFS > costSSTF and costFCFS > costScan && costFCFS > costCScan) {
+        cout << "\n\tFCFS has the slowest speed";
+        cout << "\n\tTotal cost: " << costFCFS;
+        cout << "\n\tAverage cost: " << costFCFS / sz;
     }
-    else if (costSSTF > costFCFS and costSSTF > costScan and costSSTF > costCScan) {
-        cout << "\nFCFS has the fastest speed";
-        cout << "\nTotal cost: " << costSSTF;
-        cout << "\nAverage cost: " << costSSTF / sz;
+    else if (costSSTF > costFCFS && costSSTF > costScan && costSSTF > costCScan) {
+        cout << "\n\tFCFS has the slowest speed";
+        cout << "\n\tTotal cost: " << costSSTF;
+        cout << "\n\tAverage cost: " << costSSTF / sz;
     }
-    else if (costScan > costFCFS and costScan > costSSTF and costScan > costCScan) {
-        cout << "\nSCAN has the fastest speed";
-        cout << "\nTotal cost: " << costScan;
-        cout << "\nAverage cost: " << costScan / sz;
+    else if (costScan > costFCFS && costScan > costSSTF && costScan > costCScan) {
+        cout << "\n\tSCAN has the slowest speed";
+        cout << "\n\tTotal cost: " << costScan;
+        cout << "\n\tAverage cost: " << costScan / sz;
     }
     else {
-        cout << "\nCScan has the fastest speed";
-        cout << "\nTotal cost: " << costCScan;
-        cout << "\nAverage cost: " << costCScan / sz;
+        cout << "\n\tCScan has the slowest speed";
+        cout << "\n\tTotal cost: " << costCScan;
+        cout << "\n\tAverage cost: " << costCScan / sz;
     }
 }
 void printSlowestReport(double costFCFS, double costSSTF, double costScan, double costCScan, int sz)
 {
-    if (costFCFS < costSSTF and costFCFS < costScan and costFCFS < costCScan) {
-        cout << "\nFCFS has the slowest speed";
-        cout << "\nTotal cost: " << costFCFS;
-        cout << "\nAverage cost: " << costFCFS / sz;
+    if (costFCFS < costSSTF && costFCFS < costScan && costFCFS < costCScan) {
+        cout << "\n\tFCFS has the fastest speed";
+        cout << "\n\tTotal cost: " << costFCFS;
+        cout << "\n\tAverage cost: " << costFCFS / sz;
     }
-    else if (costSSTF < costFCFS and costSSTF < costScan and costSSTF < costCScan) {
-        cout << "\nFCFS has the slowest speed";
-        cout << "\nTotal cost: " << costSSTF;
-        cout << "\nAverage cost: " << costSSTF / sz;
+    else if (costSSTF < costFCFS && costSSTF < costScan && costSSTF < costCScan) {
+        cout << "\n\tFCFS has the fastest speed";
+        cout << "\n\tTotal cost: " << costSSTF;
+        cout << "\n\tAverage cost: " << costSSTF / sz;
     }
-    else if (costScan < costFCFS and costScan < costSSTF and costScan < costCScan) {
-        cout << "\nSCAN has the slowest speed";
-        cout << "\nTotal cost: " << costScan;
-        cout << "\nAverage cost: " << costScan / sz;
+    else if (costScan < costFCFS && costScan < costSSTF && costScan < costCScan) {
+        cout << "\n\tSCAN has the fastest speed";
+        cout << "\n\tTotal cost: " << costScan;
+        cout << "\n\tAverage cost: " << costScan / sz;
     }
     else {
-        cout << "\nCScan has the slowest speed";
-        cout << "\nTotal cost: " << costCScan;
-        cout << "\nAverage cost: " << costCScan / sz;
+        cout << "\n\tCScan has the fastest speed";
+        cout << "\n\tTotal cost: " << costCScan;
+        cout << "\n\tAverage cost: " << costCScan / sz;
     }
 }
 void printFinalReport(double costFCFS, double costSSTF, double costScan, double costCScan, int sz)
